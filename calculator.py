@@ -19,7 +19,8 @@ while loop_bool:
     else:
         solution = 0
         num1 = float(input_list[1])
-        num2 = float(input_list[2])
+        if len(input_list) > 2:
+            num2 = float(input_list[2])
 
         if input_list[0] == '+':
             solution = arithmetic.add(num1, num2)
@@ -27,6 +28,10 @@ while loop_bool:
             solution = arithmetic.subtract(num1, num2)
         elif input_list[0] == '*':
             solution = arithmetic.multiply(num1, num2)
+        elif input_list[0] == '/':
+            solution = arithmetic.divide(num1, num2)
+        elif input_list[0] == 'square':
+            solution = arithmetic.square(num1)
 
         print(solution)
 
