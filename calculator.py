@@ -32,6 +32,10 @@ while loop_bool:
             solution = arithmetic.divide(num1, num2)
         elif input_list[0] == 'square':
             solution = arithmetic.square(num1)
+        elif input_list[0] == 'cube':
+            solution = arithmetic.cube(num1)
+        elif input_list[0] == 'pow':
+            solution = arithmetic.power(num1, num2)
 
         print(solution)
 
