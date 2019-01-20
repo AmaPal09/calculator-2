@@ -18,8 +18,14 @@ while loop_bool:
         quit()
     else:
         solution = 0
+        num1 = float(input_list[1])
+        num2 = float(input_list[2])
+
         if input_list[0] == '+':
-            solution = arithmetic.add(float(input_list[1]), float(input_list[2]))
+            solution = arithmetic.add(num1, num2)
+        elif input_list[0] == '-': 
+            solution = arithmetic.subtract(num1, num2)
+            
         print(solution)
 
         
