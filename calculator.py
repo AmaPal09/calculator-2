@@ -36,6 +36,8 @@ while loop_bool:
             solution = arithmetic.cube(num1)
         elif input_list[0] == 'pow':
             solution = arithmetic.power(num1, num2)
+        elif input_list[0] == 'mod':
+            solution = arithmetic.mod(num1, num2)
 
         print(solution)
 
