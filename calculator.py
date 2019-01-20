@@ -18,9 +18,20 @@ while loop_bool:
         quit()
     else:
         solution = 0
-        num1 = float(input_list[1])
+
+        try:
+            num1 = float(input_list[1])         
+        except Exception as e:
+            print("Invalid input. Please enter a number")
+            continue
+
         if len(input_list) > 2:
-            num2 = float(input_list[2])
+            try:
+                num2 = float(input_list[2])
+            except Exception as e:
+                print("Invalid input. Please enter a number")
+                continue
+
 
         if input_list[0] == '+':
             solution = arithmetic.add(num1, num2)
@@ -38,6 +49,10 @@ while loop_bool:
             solution = arithmetic.power(num1, num2)
         elif input_list[0] == 'mod':
             solution = arithmetic.mod(num1, num2)
+
+        else:
+            print("Not a valid arithmetic operator. Please enter a real one.")
+            continue
 
         print(solution)
 
