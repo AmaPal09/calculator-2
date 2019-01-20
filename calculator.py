@@ -21,15 +21,15 @@ while loop_bool:
 
         try:
             num1 = float(input_list[1])         
-        except Exception as e:
-            print("Invalid input. Please enter a number")
+        except ValueError as e:
+            print("Invalid input. Please enter a number.")
             continue
 
         if len(input_list) > 2:
             try:
                 num2 = float(input_list[2])
-            except Exception as e:
-                print("Invalid input. Please enter a number")
+            except ValueError as e:
+                print("Invalid input. Please enter a number.")
                 continue
 
 
