@@ -25,7 +25,9 @@ while loop_bool:
             solution = arithmetic.add(num1, num2)
         elif input_list[0] == '-': 
             solution = arithmetic.subtract(num1, num2)
-            
+        elif input_list[0] == '*':
+            solution = arithmetic.multiply(num1, num2)
+
         print(solution)
 
         
